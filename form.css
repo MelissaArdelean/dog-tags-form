@@ -1,0 +1,27 @@
+.expiry-month,
+.expiry-year,
+.cvv {
+    display: inline;
+}
+
+fieldset {
+    width: 700px;
+    background-color: #f3eaf9;
+    border-radius: 10px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+input[type=submit] {
+    background-color: #f3eaf9;
+    padding: 7px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+input[type=submit]:hover {
+    background-color: #c0b9dd;
+    cursor: pointer;
+}

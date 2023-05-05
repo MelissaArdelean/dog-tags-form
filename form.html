@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 2- Form</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>
+        <span>&#128062;</span>Personalized Dog Tags <span>&#128062;</span>
+      </h1>
+    </header>
+    <form>
+      <fieldset>
+        <legend>Client Details</legend>
+        <div class="name">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" placeholder="Name" required />
+        </div>
+        <div class="phone">
+          <label for="phone">Phone Number:</label>
+          <input type="text" id="phone" placeholder="Phone Number" required />
+        </div>
+        <div class="address">
+          <label for="address">Shipping Address:</label>
+          <input type="text" id="address" placeholder="Address" required />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Order Details</legend>
+        <div class="tag-color">
+          <label for="color">Pick a color for the tag:</label>
+          <input type="color" id="color" />
+        </div>
+        <div class="tag-shape">
+          <label for="tag-shape">Choose a shape for the tag:</label>
+          <select name="shape" id="tag-shape">
+            <option value="">--Choose an option--</option>
+            <option value="circle">Circle</option>
+            <option value="star">Star</option>
+            <option value="heart">Heart</option>
+            <option value="paw">Paw</option>
+            <option value="bone">Bone</option>
+          </select>
+        </div>
+        <div class="tag-size">
+          <label>Pick a size for the tag:</label>
+          <input type="radio" id="Option1" value="small" name="size" />
+          <label for="Option1">Small (35mm x 19mm)</label>
+          <input type="radio" id="Option2" value="medium" name="size" />
+          <label for="Option2">Medium (38mm x 25mm)</label>
+          <input type="radio" id="Option3" value="large" name="size" />
+          <label for="Option3">Large (50mm x 32mm)</label>
+        </div>
+        <div class="tag-text-front">
+          <p>
+            <label for="front"
+              >Please enter the text you would like to engrave on the front of
+              the tag:</label
+            >
+          </p>
+          <textarea
+            name="front"
+            id="front"
+            cols="50"
+            rows="3"
+            placeholder="We recommend engraving your dog's name on the front"
+          ></textarea>
+        </div>
+        <div class="tag-text-back">
+          <p>
+            <label for="back"
+              >Please enter the text you would like to engrave on the back of
+              the tag:</label
+            >
+          </p>
+          <textarea
+            name="back"
+            id="back"
+            cols="50"
+            rows="3"
+            placeholder="We recommend engraving information such as your name, address and phone number on the back"
+          ></textarea>
+        </div>
+        <div class="qty">
+          <label for="qty"
+            >Please choose the quantity you would like to order:</label
+          >
+          <input type="number" id="qty" />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Payment Details</legend>
+        <div class="payment-method">
+          <label for="pay-select">Please select a payment method:</label>
+          <select name="payment" id="pay-select">
+            <option value="">--Choose an option--</option>
+            <option value="card">Online card payment</option>
+            <option value="cash">Cash on delivery</option>
+          </select>
+        </div>
+        <div class="card-details">
+          <p>
+            If you previously selected the card payment method, please enter
+            your credit card information below:
+          </p>
+          <input type="text" id="card-number" placeholder="Card Number" />
+          <div class="expiry-month">
+            <select name="Month">
+              <option value="">--Month--</option>
+              <option value="january">January</option>
+              <option value="february">February</option>
+              <option value="march">March</option>
+              <option value="april">April</option>
+              <option value="may">May</option>
+              <option value="june">June</option>
+              <option value="july">July</option>
+              <option value="august">August</option>
+              <option value="september">September</option>
+              <option value="october">October</option>
+              <option value="november">November</option>
+              <option value="december">December</option>
+            </select>
+          </div>
+          <div class="expiry-year">
+            <select name="Year">
+              <option value="">--Year--</option>
+              <option value="2023">2023</option>
+              <option value="2024">2024</option>
+              <option value="2025">2025</option>
+              <option value="2026">2026</option>
+            </select>
+          </div>
+          <div class="cvv">
+            <input type="text" id="cvv" placeholder="CVV" />
+          </div>
+        </div>
+      </fieldset>
+      <input type="submit" name="submit" id="submit" value="Place Order" />
+    </form>
+  </body>
+</html>
